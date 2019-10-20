@@ -1,0 +1,49 @@
+This is pseudocode for the first three steps of the search algorithm
+Search algorithm
+
+Variables and lists
+
+A= list of cities #or their geographic coordinates?
+i=element in list A
+x=population   #greater populations will likely produce more plastic waste but we can use a different variable if you guys think it´s better
+b=distance to the coast
+
+B=list of cities or locations pre-selected in step 1
+
+j=element in list B
+uv=uv radiation
+t=temperature # average temperature?
+
+C=list of cities or locations pre-selected in step 2
+k=element in list C
+sc=sea current (boolean) #if the location in C  is close (we would also need to define how close, right? oh my! ) to a sea current sc=True
+
+w=wind speed #or any other variable that´s more suitable for this
+sh=shipping route (boolean) #if the location in C is part of a shipping route sh=True
+
+Step 1
+
+for i in A
+   if x>2million #2 million is just a random value I put as an example 
+   and b<20km #20 km is another random value only meant as an example
+    return i
+
+  #here we might need a list made up of all the elements returned in Step 1 which were selected according to the previous criteria. Let´s call it B.
+
+
+
+Step 2
+
+ for j in B   
+   if t>20 # 20 is just a random temperature value meant as example 
+   and uv > 2000 #2000 is a random radiation value meant as example
+  return j
+
+#here we narrow down our list even more. This time, it could be made up of all the elements returned in Step2. Let´s call it C
+
+Step 3
+
+for k in C
+  if sc=True and w>some reference value and sh=True
+
+  return k
